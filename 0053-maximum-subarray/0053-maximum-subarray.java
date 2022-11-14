@@ -1,6 +1,9 @@
 class Solution {
         public int maxSubArray(int[] nums) {
             
+//                      used kadane algorithm here gor O(n) 
+//                 this algorithm was asked in google interviews
+                
             int sum  = 0;
             int max = nums[0];
             
