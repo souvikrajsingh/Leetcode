@@ -1,6 +1,6 @@
 # Leetcode
 
-I have no shame in admitting that I haven't been very consistent with my Data Structures and Algorithm problem solving for the past few months. I have decided to be solving 
+I have no shame in admitting that I haven't been very consistent with my Data Structures and Algorithm problem solving for the past few months. I have decided to solve 
 Leetcode questions consistently almost everyday. This repository is basically to share my progress and to myself accountable.
 
 I have this blogging series that i have running on Hashnode regarding the important Interview asked Algorithm that I come across during my preparations
