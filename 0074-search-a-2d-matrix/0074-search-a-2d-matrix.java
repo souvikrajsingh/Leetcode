@@ -24,24 +24,25 @@ class Solution {
     }
     */
         
-        int rows = matrix.length;
-    int cols = matrix[0].length;
-    
-    for (int row = 0; row < rows; row++) {
-        int left = 0;
-        int right = cols - 1;
+      int n = matrix.length;
+        int m = matrix[0].length ;
         
-        while (left <= right) {
-            int mid = (left + right) / 2;
-            if (matrix[row][mid] == target) {
+        int low = 0;
+        int high = ((n*m) - 1);
+        
+        while(low <= high){
+            int mid = (low+ (high - low) /2);
+            if(matrix[mid/m][mid%m] == target){
                 return true;
-            } else if (matrix[row][mid] < target) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
             }
-        }
-    }
+            if(matrix[mid/m][mid%m] < target){
+                low = mid + 1;
+            }
+            else{
+                high = mid - 1;
+            }
+            }
+        
     
     return false;
 }
