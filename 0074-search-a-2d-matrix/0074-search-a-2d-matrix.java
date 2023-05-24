@@ -4,7 +4,7 @@ class Solution {
         /*
         
         this solution works but is more appropriate for row-wise and column -wise
-        sorted matrix
+        sorted matrix, it a  better solution in this case
         
         int row = 0;
         int col = matrix[0].length - 1;
@@ -23,6 +23,8 @@ class Solution {
         return false;
     }
     */
+        
+// refer to your notes 
         
       int n = matrix.length;
         int m = matrix[0].length ;
