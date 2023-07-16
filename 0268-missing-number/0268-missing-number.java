@@ -1,21 +1,14 @@
 class Solution {
     public int missingNumber(int[] nums) {
-        Arrays.sort(nums);
-        // 3 0 1 
-        // 0 1 3
 
-
-        // 0 1  3
-        // 0 1 2 
-        int i  = 0;
-        while( i < nums.length){
-            if(nums[i] != i){
-                return i;
-            }
-            else{
-                 i++;   
-            }
+// O(n) solution
+       int  n = nums.length;
+        int expectedSum =  n*(n + 1)/2;
+        int sumGot = 0;
+        for(int i = 0 ; i < n ; i++ ){
+            sumGot = sumGot + nums[i];
         }
-        return i ;
+        
+        return expectedSum - sumGot;
     }
 }
