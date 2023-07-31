@@ -11,16 +11,13 @@
 class Solution {
     public ListNode reverseList(ListNode head) {
         
-        // dummy node 
-        ListNode newHead = null;
-        
+        ListNode dummy = null;
         while(head!=null){
-            
-            ListNode next = head.next; // creating a node called next that stores the add
-            head.next= newHead;
-            newHead= head;
+            ListNode next = head.next;
+            head.next =  dummy;
+            dummy = head;
             head = next;
         }
-        return newHead;
+        return dummy;
     }
 }
